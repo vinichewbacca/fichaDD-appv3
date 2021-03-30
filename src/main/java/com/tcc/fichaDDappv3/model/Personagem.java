@@ -9,7 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor //cria construtor com todos os argumentos
 @NoArgsConstructor //cria construtor sem argumentos
 @Data //cria getters and setters
-@Entity
+@Entity//indica que sera uma tabela no bd
 @Table(name = "TB_PERSONAGEM")
 public class Personagem
 {
