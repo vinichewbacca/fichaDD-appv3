@@ -17,9 +17,9 @@ public class Personagem
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String jogador;
+    private String jogador; //sera uma classe
     private String nome;
-    private String raca;
+    private String raca; //classe
     private int forca;
     private int destreza;
     private int constituicao;
