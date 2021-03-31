@@ -27,4 +27,15 @@ public class PersonagemService
     public Personagem save(Personagem pers) {
         return personagemRepository.save(pers);
     }
+
+    public void delete(Long idPersonagem)
+    {
+        personagemRepository.findById(idPersonagem);
+            boolean b = personagemRepository.existsById(idPersonagem);
+
+            if (!b){
+                throw new IllegalStateException("Personagem com o id "+ idPersonagem +" não existe");
+            }
+            personagemRepository.deleteById(idPersonagem);
+    }
 }
